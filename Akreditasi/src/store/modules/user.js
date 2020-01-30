@@ -1,4 +1,4 @@
-import { USER_REQUEST, USER_ERROR, USER_SUCCESS } from "../actions/user";
+import { USER_REQUEST, USER_ERROR, USER_SUCCESS, ACQUIRER_MERCHANT } from "../actions/user";
 import apiCall from "utils/api";
 import Vue from "vue";
 import { AUTH_LOGOUT } from "../actions/auth";
@@ -6,8 +6,9 @@ import { AUTH_LOGOUT } from "../actions/auth";
 const state = { status: "", profile: {} };
 
 const getters = {
-  getProfile: state => state.profile,
-  isProfileLoaded: state => !!state.profile.name
+    getProfile: state => state.profile,
+	isProfileLoaded: state => !!state.profile.name,
+	getMerchant: state => state.merchant
 };
 
 const actions = {
@@ -100,8 +101,8 @@ const actions = {
 		};
 			
 
-    commit(USER_REQUEST);
-		apiCall.apiCall({ url: "https://api-dxc.sensedia.com/sandbox/h7/acquirer/v1/merchant", method: "POST", data: dados })
+      commit(USER_REQUEST);
+	  apiCall.mockCall({ url: "user/me", method: "POST", data: dados })
 			.then(resp => {
 				console.log('retorno' + JSON.stringify(resp));
         commit(USER_SUCCESS, resp);
@@ -110,7 +111,18 @@ const actions = {
         commit(USER_ERROR);
         // if resp is unauthorized, logout, to
         dispatch(AUTH_LOGOUT);
-      });
+	  });
+
+		apiCall.apiCall({ url: "https://api-dxc.sensedia.com/sandbox/h7/acquirer/v1/merchant", method: "POST", data: dados })
+		.then(resp => {
+			console.log('retorno' + JSON.stringify(resp));
+			commit(ACQUIRER_MERCHANT, resp);
+		})
+		.catch(() => {
+			commit(USER_ERROR);
+			// if resp is unauthorized, logout, to
+			dispatch(AUTH_LOGOUT);
+		});
   }
 };
 
@@ -122,6 +134,9 @@ const mutations = {
     state.status = "success";
     Vue.set(state, "profile", resp);
   },
+  [ACQUIRER_MERCHANT]: (state, resp) => {
+	Vue.set(state, "merchant", resp);
+  },
   [USER_ERROR]: state => {
     state.status = "error";
   },
@@ -129,6 +144,8 @@ const mutations = {
     state.profile = {};
   }
 };
+
+
 
 export default {
   state,

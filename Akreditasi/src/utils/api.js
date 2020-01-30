@@ -3,7 +3,7 @@ import { APP_ID, APP_SECRET } from '../store/actions/auth';
 
 const mocks = {
   auth: { POST: { token: "This-is-a-mocked-token" } },
-  "user/me": { GET: { name: "doggo", title: "sir" } }
+  "user/me": { GET: { name: "Usuario", title: "Sr." } }
 };
 
 const apiCall = {
@@ -11,7 +11,7 @@ const apiCall = {
         new Promise((resolve, reject) => {
             setTimeout(() => {
                 try {
-                    resolve(mocks[url][method || "GET"]);
+                    resolve(mocks[url]["GET"]);
                     console.log(`Mocked '${url}' - ${method || "GET"}`);
                     console.log("response: ", mocks[url][method || "GET"]);
                 } catch (err) {

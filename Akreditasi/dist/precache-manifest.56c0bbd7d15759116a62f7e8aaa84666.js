@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "5ec84782f0e576bbcc14",
+    "revision": "22a14f90a76692ffee65",
     "url": "/css/app.449a98b3.css"
   },
   {
-    "revision": "5ec84782f0e576bbcc14",
-    "url": "/js/app.71ecd724.js"
+    "revision": "22a14f90a76692ffee65",
+    "url": "/js/app.b0c5e3fe.js"
   },
   {
     "revision": "e51e222953fa15f98395",
     "url": "/js/chunk-0faac4c9.346624a3.js"
   },
   {
-    "revision": "291799bf17bb07ac137d",
-    "url": "/js/chunk-2d0cb6c9.d0299d2a.js"
+    "revision": "34d919664a56984ccd6a",
+    "url": "/js/chunk-2d0cb6c9.742be639.js"
   },
   {
     "revision": "dc03b0a3eb765c882b1b",
@@ -48,7 +48,7 @@ self.__precacheManifest = [
     "url": "/img/nucleo-icons.0b8a30b1.svg"
   },
   {
-    "revision": "3c73451b1fbd4910e2ed96ae01b1d3f8",
+    "revision": "826294e983f6a4853eb264f1d96cd6bd",
     "url": "/index.html"
   },
   {
@@ -64,12 +64,12 @@ self.__precacheManifest = [
     "url": "/img/brand/favicon.png"
   },
   {
-    "revision": "d136a071cf09ba5ab8dc2ada1ab04015",
-    "url": "/img/theme/bootstrap.jpg"
-  },
-  {
     "revision": "1f533d2fdc40493ee834dd8e4288220c",
     "url": "/img/theme/angular.jpg"
+  },
+  {
+    "revision": "d136a071cf09ba5ab8dc2ada1ab04015",
+    "url": "/img/theme/bootstrap.jpg"
   },
   {
     "revision": "50dd5fdc839dfc16739b15370650485c",
@@ -80,20 +80,20 @@ self.__precacheManifest = [
     "url": "/img/theme/sketch.jpg"
   },
   {
-    "revision": "edc7106b21ec12e57022b2ebd534cd2d",
-    "url": "/img/theme/team-1-800x800.jpg"
-  },
-  {
     "revision": "be997d5226b992ffad34816870c6b7aa",
     "url": "/img/theme/team-2-800x800.jpg"
   },
   {
-    "revision": "54e3f3c414bd8e7234bae3ee3be950e5",
-    "url": "/img/theme/team-3-800x800.jpg"
-  },
-  {
     "revision": "66618a418175ddf2ac8c47a241d327a8",
     "url": "/img/theme/team-4-800x800.jpg"
+  },
+  {
+    "revision": "edc7106b21ec12e57022b2ebd534cd2d",
+    "url": "/img/theme/team-1-800x800.jpg"
+  },
+  {
+    "revision": "54e3f3c414bd8e7234bae3ee3be950e5",
+    "url": "/img/theme/team-3-800x800.jpg"
   },
   {
     "revision": "c532f6f0176968caa6265864ee1abb35",
