@@ -29,7 +29,7 @@ const actions = {
            
       commit(AUTH_REQUEST);
 
-         apiCall({ url: "https://api-dxc.sensedia.com/oauth/access-token", data: user, method: "POST", token: true })
+         apiCall.tokenCall({ url: "https://api-dxc.sensedia.com/oauth/access-token", data: user, method: "POST", token: true })
              .then(resp => {
               localStorage.setItem("user-token", resp.data.access_token);
         

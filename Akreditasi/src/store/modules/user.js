@@ -101,7 +101,7 @@ const actions = {
 			
 
     commit(USER_REQUEST);
-		apiCall({ url: "https://api-dxc.sensedia.com/sandbox/h7/acquirer/v1/merchant", method: "POST", data: dados })
+		apiCall.apiCall({ url: "https://api-dxc.sensedia.com/sandbox/h7/acquirer/v1/merchant", method: "POST", data: dados })
 			.then(resp => {
 				console.log('retorno' + JSON.stringify(resp));
         commit(USER_SUCCESS, resp);

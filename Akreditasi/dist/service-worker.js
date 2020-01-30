@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.706ce9e1088a587bbd095383a8ba2a97.js"
+  "/precache-manifest.f4b61c558f38efa5b48b3274c2e0aae6.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "akreditasi"});
