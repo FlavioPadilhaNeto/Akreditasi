@@ -1,0 +1,363 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>Akreditasi</Name>
+    <RootNamespace>Akreditasi</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>b16fae9c-a473-4bc3-af43-a23cf8de2741</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>node_modules\@vue\cli-service\bin\vue-cli-service.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+    <ScriptArguments>serve</ScriptArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="public\favicon.ico" />
+    <Content Include="public\img\brand\favicon.png" />
+    <Content Include="public\img\brand\green.png" />
+    <Content Include="public\img\brand\white.png" />
+    <Content Include="public\img\icons\android-chrome-192x192.png" />
+    <Content Include="public\img\icons\android-chrome-512x512.png" />
+    <Content Include="public\img\icons\apple-touch-icon-120x120.png" />
+    <Content Include="public\img\icons\apple-touch-icon-152x152.png" />
+    <Content Include="public\img\icons\apple-touch-icon-180x180.png" />
+    <Content Include="public\img\icons\apple-touch-icon-60x60.png" />
+    <Content Include="public\img\icons\apple-touch-icon-76x76.png" />
+    <Content Include="public\img\icons\apple-touch-icon.png" />
+    <Content Include="public\img\icons\common\github.svg" />
+    <Content Include="public\img\icons\common\google.svg" />
+    <Content Include="public\img\icons\favicon-16x16.png" />
+    <Content Include="public\img\icons\favicon-32x32.png" />
+    <Content Include="public\img\icons\msapplication-icon-144x144.png" />
+    <Content Include="public\img\icons\mstile-150x150.png" />
+    <Content Include="public\img\icons\safari-pinned-tab.svg" />
+    <Content Include="public\img\theme\angular.jpg" />
+    <Content Include="public\img\theme\bootstrap.jpg" />
+    <Content Include="public\img\theme\profile-cover.jpg" />
+    <Content Include="public\img\theme\react.jpg" />
+    <Content Include="public\img\theme\sketch.jpg" />
+    <Content Include="public\img\theme\team-1-800x800.jpg" />
+    <Content Include="public\img\theme\team-2-800x800.jpg" />
+    <Content Include="public\img\theme\team-3-800x800.jpg" />
+    <Content Include="public\img\theme\team-4-800x800.jpg" />
+    <Content Include="public\img\theme\vue.jpg" />
+    <Content Include="public\index.html" />
+    <Content Include="public\manifest.json" />
+    <Content Include="public\robots.txt" />
+    <Content Include="src\App.vue" />
+    <Content Include="src\assets\logo.png" />
+    <Content Include="src\assets\scss\akreditasi.scss" />
+    <Content Include="src\assets\scss\core\alerts\_alert-dismissible.scss" />
+    <Content Include="src\assets\scss\core\alerts\_alert.scss" />
+    <Content Include="src\assets\scss\core\avatars\_avatar-group.scss" />
+    <Content Include="src\assets\scss\core\avatars\_avatar.scss" />
+    <Content Include="src\assets\scss\core\badges\_badge-circle.scss" />
+    <Content Include="src\assets\scss\core\badges\_badge-dot.scss" />
+    <Content Include="src\assets\scss\core\badges\_badge.scss" />
+    <Content Include="src\assets\scss\core\buttons\_button-brand.scss" />
+    <Content Include="src\assets\scss\core\buttons\_button-icon.scss" />
+    <Content Include="src\assets\scss\core\buttons\_button.scss" />
+    <Content Include="src\assets\scss\core\cards\_card-animations.scss" />
+    <Content Include="src\assets\scss\core\cards\_card-blockquote.scss" />
+    <Content Include="src\assets\scss\core\cards\_card-profile.scss" />
+    <Content Include="src\assets\scss\core\cards\_card-stats.scss" />
+    <Content Include="src\assets\scss\core\cards\_card.scss" />
+    <Content Include="src\assets\scss\core\charts\_chart.scss" />
+    <Content Include="src\assets\scss\core\close\_close.scss" />
+    <Content Include="src\assets\scss\core\custom-forms\_custom-checkbox.scss" />
+    <Content Include="src\assets\scss\core\custom-forms\_custom-control.scss" />
+    <Content Include="src\assets\scss\core\custom-forms\_custom-form.scss" />
+    <Content Include="src\assets\scss\core\custom-forms\_custom-radio.scss" />
+    <Content Include="src\assets\scss\core\custom-forms\_custom-toggle.scss" />
+    <Content Include="src\assets\scss\core\dropdowns\_dropdown.scss" />
+    <Content Include="src\assets\scss\core\footers\_footer.scss" />
+    <Content Include="src\assets\scss\core\forms\_form-validation.scss" />
+    <Content Include="src\assets\scss\core\forms\_form.scss" />
+    <Content Include="src\assets\scss\core\forms\_input-group.scss" />
+    <Content Include="src\assets\scss\core\headers\_header.scss" />
+    <Content Include="src\assets\scss\core\icons\_icon-shape.scss" />
+    <Content Include="src\assets\scss\core\icons\_icon.scss" />
+    <Content Include="src\assets\scss\core\list-groups\_list-group.scss" />
+    <Content Include="src\assets\scss\core\maps\_map.scss" />
+    <Content Include="src\assets\scss\core\masks\_mask.scss" />
+    <Content Include="src\assets\scss\core\mixins\_alert.scss" />
+    <Content Include="src\assets\scss\core\mixins\_background-variant.scss" />
+    <Content Include="src\assets\scss\core\mixins\_badge.scss" />
+    <Content Include="src\assets\scss\core\mixins\_buttons.scss" />
+    <Content Include="src\assets\scss\core\mixins\_forms.scss" />
+    <Content Include="src\assets\scss\core\mixins\_icon.scss" />
+    <Content Include="src\assets\scss\core\mixins\_modals.scss" />
+    <Content Include="src\assets\scss\core\mixins\_popover.scss" />
+    <Content Include="src\assets\scss\core\modals\_modal.scss" />
+    <Content Include="src\assets\scss\core\navbars\_navbar-collapse.scss" />
+    <Content Include="src\assets\scss\core\navbars\_navbar-dropdown.scss" />
+    <Content Include="src\assets\scss\core\navbars\_navbar-search.scss" />
+    <Content Include="src\assets\scss\core\navbars\_navbar-vertical.scss" />
+    <Content Include="src\assets\scss\core\navbars\_navbar.scss" />
+    <Content Include="src\assets\scss\core\navs\_nav-pills.scss" />
+    <Content Include="src\assets\scss\core\navs\_nav.scss" />
+    <Content Include="src\assets\scss\core\paginations\_pagination.scss" />
+    <Content Include="src\assets\scss\core\popovers\_popover.scss" />
+    <Content Include="src\assets\scss\core\progresses\_progress.scss" />
+    <Content Include="src\assets\scss\core\separators\_separator.scss" />
+    <Content Include="src\assets\scss\core\tables\_table.scss" />
+    <Content Include="src\assets\scss\core\type\_article.scss" />
+    <Content Include="src\assets\scss\core\type\_display.scss" />
+    <Content Include="src\assets\scss\core\type\_heading.scss" />
+    <Content Include="src\assets\scss\core\type\_type.scss" />
+    <Content Include="src\assets\scss\core\utilities\_backgrounds.scss" />
+    <Content Include="src\assets\scss\core\utilities\_blurable.scss" />
+    <Content Include="src\assets\scss\core\utilities\_floating.scss" />
+    <Content Include="src\assets\scss\core\utilities\_helper.scss" />
+    <Content Include="src\assets\scss\core\utilities\_image.scss" />
+    <Content Include="src\assets\scss\core\utilities\_opacity.scss" />
+    <Content Include="src\assets\scss\core\utilities\_overflow.scss" />
+    <Content Include="src\assets\scss\core\utilities\_position.scss" />
+    <Content Include="src\assets\scss\core\utilities\_shadows.scss" />
+    <Content Include="src\assets\scss\core\utilities\_sizing.scss" />
+    <Content Include="src\assets\scss\core\utilities\_spacing.scss" />
+    <Content Include="src\assets\scss\core\utilities\_text.scss" />
+    <Content Include="src\assets\scss\core\utilities\_transform.scss" />
+    <Content Include="src\assets\scss\core\vendors\_flatpickr.scss" />
+    <Content Include="src\assets\scss\core\vendors\_headroom.scss" />
+    <Content Include="src\assets\scss\core\vendors\_nouislider.scss" />
+    <Content Include="src\assets\scss\core\vendors\_scrollbar.scss" />
+    <Content Include="src\assets\scss\custom\_alert.scss" />
+    <Content Include="src\assets\scss\custom\_avatar.scss" />
+    <Content Include="src\assets\scss\custom\_badge.scss" />
+    <Content Include="src\assets\scss\custom\_buttons.scss" />
+    <Content Include="src\assets\scss\custom\_card.scss" />
+    <Content Include="src\assets\scss\custom\_chart.scss" />
+    <Content Include="src\assets\scss\custom\_close.scss" />
+    <Content Include="src\assets\scss\custom\_components.scss" />
+    <Content Include="src\assets\scss\custom\_content.scss" />
+    <Content Include="src\assets\scss\custom\_custom-forms.scss" />
+    <Content Include="src\assets\scss\custom\_dropdown.scss" />
+    <Content Include="src\assets\scss\custom\_footer.scss" />
+    <Content Include="src\assets\scss\custom\_forms.scss" />
+    <Content Include="src\assets\scss\custom\_functions.scss" />
+    <Content Include="src\assets\scss\custom\_header.scss" />
+    <Content Include="src\assets\scss\custom\_icons.scss" />
+    <Content Include="src\assets\scss\custom\_input-group.scss" />
+    <Content Include="src\assets\scss\custom\_list-group.scss" />
+    <Content Include="src\assets\scss\custom\_map.scss" />
+    <Content Include="src\assets\scss\custom\_mask.scss" />
+    <Content Include="src\assets\scss\custom\_mixins.scss" />
+    <Content Include="src\assets\scss\custom\_modal.scss" />
+    <Content Include="src\assets\scss\custom\_nav.scss" />
+    <Content Include="src\assets\scss\custom\_navbar.scss" />
+    <Content Include="src\assets\scss\custom\_pagination.scss" />
+    <Content Include="src\assets\scss\custom\_popover.scss" />
+    <Content Include="src\assets\scss\custom\_progress.scss" />
+    <Content Include="src\assets\scss\custom\_reboot.scss" />
+    <Content Include="src\assets\scss\custom\_section.scss" />
+    <Content Include="src\assets\scss\custom\_separator.scss" />
+    <Content Include="src\assets\scss\custom\_tables.scss" />
+    <Content Include="src\assets\scss\custom\_type.scss" />
+    <Content Include="src\assets\scss\custom\_utilities.scss" />
+    <Content Include="src\assets\scss\custom\_variables.scss" />
+    <Content Include="src\assets\scss\custom\_vendors.scss" />
+    <Content Include="src\assets\vendor\nucleo\css\nucleo-svg.css" />
+    <Content Include="src\assets\vendor\nucleo\css\nucleo.css" />
+    <Content Include="src\assets\vendor\nucleo\fonts\nucleo-icons.eot" />
+    <Content Include="src\assets\vendor\nucleo\fonts\nucleo-icons.svg" />
+    <Content Include="src\assets\vendor\nucleo\fonts\nucleo-icons.ttf" />
+    <Content Include="src\assets\vendor\nucleo\fonts\nucleo-icons.woff" />
+    <Content Include="src\assets\vendor\nucleo\fonts\nucleo-icons.woff2" />
+    <Content Include="src\components\Badge.vue" />
+    <Content Include="src\components\BaseAlert.vue" />
+    <Content Include="src\components\BaseButton.vue" />
+    <Content Include="src\components\BaseCheckbox.vue" />
+    <Content Include="src\components\BaseDropdown.vue" />
+    <Content Include="src\components\BaseHeader.vue" />
+    <Content Include="src\components\BaseInput.vue" />
+    <Content Include="src\components\BaseNav.vue" />
+    <Content Include="src\components\BasePagination.vue" />
+    <Content Include="src\components\BaseProgress.vue" />
+    <Content Include="src\components\BaseRadio.vue" />
+    <Content Include="src\components\BaseSlider.vue" />
+    <Content Include="src\components\BaseSwitch.vue" />
+    <Content Include="src\components\BaseTable.vue" />
+    <Content Include="src\components\Card.vue" />
+    <Content Include="src\components\Charts\BarChart.js" />
+    <Content Include="src\components\Charts\config.js" />
+    <Content Include="src\components\Charts\DoughnutChart.js" />
+    <Content Include="src\components\Charts\globalOptionsMixin.js" />
+    <Content Include="src\components\Charts\LineChart.js" />
+    <Content Include="src\components\Charts\optionHelpers.js" />
+    <Content Include="src\components\Charts\PieChart.js" />
+    <Content Include="src\components\CloseButton.vue" />
+    <Content Include="src\components\Home.vue" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="src\components\lib\center-container.vue" />
+    <Content Include="src\components\lib\loading.vue" />
+    <Content Include="src\components\Modal.vue" />
+    <Content Include="src\components\NavbarToggleButton.vue" />
+    <Content Include="src\components\NotificationPlugin\index.js" />
+    <Content Include="src\components\NotificationPlugin\Notification.vue" />
+    <Content Include="src\components\NotificationPlugin\Notifications.vue" />
+    <Content Include="src\components\SidebarPlugin\index.js" />
+    <Content Include="src\components\SidebarPlugin\SideBar.vue" />
+    <Content Include="src\components\SidebarPlugin\SidebarItem.vue" />
+    <Content Include="src\components\StatsCard.vue" />
+    <Content Include="src\components\stringUtils.js" />
+    <Content Include="src\components\Tabs\PillsLayout.vue" />
+    <Content Include="src\components\Tabs\Tab.vue" />
+    <Content Include="src\components\Tabs\TabPane.vue" />
+    <Content Include="src\components\Tabs\Tabs.vue" />
+    <Content Include="src\components\Tabs\TabsLayout.vue" />
+    <Content Include="src\directives\click-ouside.js" />
+    <Content Include="src\layout\AuthLayout.vue" />
+    <Content Include="src\layout\Content.vue" />
+    <Content Include="src\layout\ContentFooter.vue" />
+    <Content Include="src\layout\DashboardLayout.vue" />
+    <Content Include="src\layout\DashboardNavbar.vue" />
+    <Content Include="src\plugins\akreditasi-dashboard.js" />
+    <Content Include="src\plugins\globalComponents.js" />
+    <Content Include="src\plugins\globalDirectives.js" />
+    <Content Include="src\registerServiceWorker.js" />
+    <Content Include="src\router.js" />
+    <Content Include="src\store\actions\auth.js" />
+    <Content Include="src\store\actions\user.js" />
+    <Content Include="src\store\index.js" />
+    <Content Include="src\store\modules\auth.js" />
+    <Content Include="src\store\modules\user.js" />
+    <Content Include="src\utils\api.js" />
+    <Content Include="src\views\Dashboard.vue" />
+    <Content Include="src\views\Dashboard\PageVisitsTable.vue" />
+    <Content Include="src\views\Dashboard\SocialTrafficTable.vue" />
+    <Content Include="src\views\Login.vue" />
+    <Content Include="src\views\Tables.vue" />
+    <Content Include="src\views\Tables\ProjectsTable.vue" />
+    <Content Include="src\views\UserProfile.vue" />
+    <Content Include="vue.config.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dist\" />
+    <Folder Include="public\" />
+    <Folder Include="public\img\" />
+    <Folder Include="public\img\brand\" />
+    <Folder Include="public\img\icons\" />
+    <Folder Include="public\img\icons\common\" />
+    <Folder Include="public\img\theme\" />
+    <Folder Include="src\" />
+    <Folder Include="src\assets\" />
+    <Folder Include="src\assets\scss\" />
+    <Folder Include="src\assets\scss\core\" />
+    <Folder Include="src\assets\scss\core\alerts\" />
+    <Folder Include="src\assets\scss\core\avatars\" />
+    <Folder Include="src\assets\scss\core\badges\" />
+    <Folder Include="src\assets\scss\core\buttons\" />
+    <Folder Include="src\assets\scss\core\cards\" />
+    <Folder Include="src\assets\scss\core\charts\" />
+    <Folder Include="src\assets\scss\core\close\" />
+    <Folder Include="src\assets\scss\core\custom-forms\" />
+    <Folder Include="src\assets\scss\core\dropdowns\" />
+    <Folder Include="src\assets\scss\core\footers\" />
+    <Folder Include="src\assets\scss\core\forms\" />
+    <Folder Include="src\assets\scss\core\headers\" />
+    <Folder Include="src\assets\scss\core\icons\" />
+    <Folder Include="src\assets\scss\core\list-groups\" />
+    <Folder Include="src\assets\scss\core\maps\" />
+    <Folder Include="src\assets\scss\core\masks\" />
+    <Folder Include="src\assets\scss\core\mixins\" />
+    <Folder Include="src\assets\scss\core\modals\" />
+    <Folder Include="src\assets\scss\core\navbars\" />
+    <Folder Include="src\assets\scss\core\navs\" />
+    <Folder Include="src\assets\scss\core\paginations\" />
+    <Folder Include="src\assets\scss\core\popovers\" />
+    <Folder Include="src\assets\scss\core\progresses\" />
+    <Folder Include="src\assets\scss\core\separators\" />
+    <Folder Include="src\assets\scss\core\tables\" />
+    <Folder Include="src\assets\scss\core\type\" />
+    <Folder Include="src\assets\scss\core\utilities\" />
+    <Folder Include="src\assets\scss\core\vendors\" />
+    <Folder Include="src\assets\scss\custom\" />
+    <Folder Include="src\assets\vendor\" />
+    <Folder Include="src\assets\vendor\nucleo\" />
+    <Folder Include="src\assets\vendor\nucleo\css\" />
+    <Folder Include="src\assets\vendor\nucleo\fonts\" />
+    <Folder Include="src\components\" />
+    <Folder Include="src\components\Charts\" />
+    <Folder Include="src\components\lib\" />
+    <Folder Include="src\components\NotificationPlugin\" />
+    <Folder Include="src\components\SidebarPlugin\" />
+    <Folder Include="src\components\Tabs\" />
+    <Folder Include="src\directives\" />
+    <Folder Include="src\layout\" />
+    <Folder Include="src\plugins\" />
+    <Folder Include="src\store\" />
+    <Folder Include="src\store\actions\" />
+    <Folder Include="src\store\modules\" />
+    <Folder Include="src\utils\" />
+    <Folder Include="src\views\" />
+    <Folder Include="src\views\Dashboard\" />
+    <Folder Include="src\views\Tables\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="babel.config.js" />
+    <Content Include="src\main.js" />
+  </ItemGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+      npm run build
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
