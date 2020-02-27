@@ -41,9 +41,8 @@ const apiCall = {
                 });
         }),
 
-    apiCall: ({ url, data, method }) =>
+    apiCall: ({ url, data, method, header = {} }) =>
         new Promise((resolve, reject) => {
-            var header = {};
             header.access_token = localStorage.getItem("user-token");
             header.client_id = APP_ID;
             header["Content-Type"] = "application/json"
